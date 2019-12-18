@@ -1,406 +1,415 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders 1`] = `
-<DocumentFragment>
+exports[`renders table: 
+    <TableHead>
+      <TableRow>
+        <TableCell>No.</TableCell>
+        <TableCell>Player</TableCell>
+        <TableCell>Play</TableCell>
+        <TableCell>Delete</TableCell>
+      </TableRow>
+    </TableHead>
+   1`] = `
+<div
+  class="makeStyles-wrapper-1"
+>
   <div
-    class="makeStyles-wrapper-1"
+    class="MuiPaper-root MuiPaper-elevation1 MuiTableContainer-root makeStyles-table-2 MuiPaper-rounded"
   >
-    <div
-      class="MuiPaper-root MuiPaper-elevation1 MuiTableContainer-root makeStyles-table-2 MuiPaper-rounded"
+    <table
+      aria-label="simple table"
+      class="MuiTable-root"
+      data-testid="table"
     >
-      <table
-        aria-label="simple table"
-        class="MuiTable-root"
+      <thead
+        class="MuiTableHead-root"
       >
-        <thead
-          class="MuiTableHead-root"
+        <tr
+          class="MuiTableRow-root MuiTableRow-head"
         >
-          <tr
-            class="MuiTableRow-root MuiTableRow-head"
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
           >
-            <th
-              class="MuiTableCell-root MuiTableCell-head"
-              scope="col"
-            >
-              No.
-            </th>
-            <th
-              class="MuiTableCell-root MuiTableCell-head"
-              scope="col"
-            >
-              Player
-            </th>
-            <th
-              class="MuiTableCell-root MuiTableCell-head"
-              scope="col"
-            >
-              Play
-            </th>
-            <th
-              class="MuiTableCell-root MuiTableCell-head"
-              scope="col"
-            >
-              Delete
-            </th>
-          </tr>
-        </thead>
-        <tbody
-          class="MuiTableBody-root"
-        >
-          <tr
-            class="MuiTableRow-root"
+            No.
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
           >
-            <th
-              class="MuiTableCell-root MuiTableCell-body"
-              scope="row"
-            >
-              1
-            </th>
-            <td
-              class="MuiTableCell-root MuiTableCell-body"
-            >
-              Frozen yoghurt
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body"
-            >
-              <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-outlined"
-                tabindex="0"
-                type="button"
-              >
-                <span
-                  class="MuiButton-label"
-                >
-                  Play
-                </span>
-                <span
-                  class="MuiTouchRipple-root"
-                />
-              </button>
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body"
-            >
-              <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-text"
-                tabindex="0"
-                type="button"
-              >
-                <span
-                  class="MuiButton-label"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root"
-                    focusable="false"
-                    role="presentation"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="MuiTouchRipple-root"
-                />
-              </button>
-            </td>
-          </tr>
-          <tr
-            class="MuiTableRow-root"
+            Player
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
           >
-            <th
-              class="MuiTableCell-root MuiTableCell-body"
-              scope="row"
-            >
-              2
-            </th>
-            <td
-              class="MuiTableCell-root MuiTableCell-body"
-            >
-              Ice cream sandwich
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body"
-            >
-              <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-outlined"
-                tabindex="0"
-                type="button"
-              >
-                <span
-                  class="MuiButton-label"
-                >
-                  Play
-                </span>
-                <span
-                  class="MuiTouchRipple-root"
-                />
-              </button>
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body"
-            >
-              <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-text"
-                tabindex="0"
-                type="button"
-              >
-                <span
-                  class="MuiButton-label"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root"
-                    focusable="false"
-                    role="presentation"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="MuiTouchRipple-root"
-                />
-              </button>
-            </td>
-          </tr>
-          <tr
-            class="MuiTableRow-root"
+            Play
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
           >
-            <th
-              class="MuiTableCell-root MuiTableCell-body"
-              scope="row"
-            >
-              3
-            </th>
-            <td
-              class="MuiTableCell-root MuiTableCell-body"
-            >
-              Eclair
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body"
-            >
-              <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-outlined"
-                tabindex="0"
-                type="button"
-              >
-                <span
-                  class="MuiButton-label"
-                >
-                  Play
-                </span>
-                <span
-                  class="MuiTouchRipple-root"
-                />
-              </button>
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body"
-            >
-              <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-text"
-                tabindex="0"
-                type="button"
-              >
-                <span
-                  class="MuiButton-label"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root"
-                    focusable="false"
-                    role="presentation"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="MuiTouchRipple-root"
-                />
-              </button>
-            </td>
-          </tr>
-          <tr
-            class="MuiTableRow-root"
-          >
-            <th
-              class="MuiTableCell-root MuiTableCell-body"
-              scope="row"
-            >
-              4
-            </th>
-            <td
-              class="MuiTableCell-root MuiTableCell-body"
-            >
-              Cupcake
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body"
-            >
-              <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-outlined"
-                tabindex="0"
-                type="button"
-              >
-                <span
-                  class="MuiButton-label"
-                >
-                  Play
-                </span>
-                <span
-                  class="MuiTouchRipple-root"
-                />
-              </button>
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body"
-            >
-              <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-text"
-                tabindex="0"
-                type="button"
-              >
-                <span
-                  class="MuiButton-label"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root"
-                    focusable="false"
-                    role="presentation"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="MuiTouchRipple-root"
-                />
-              </button>
-            </td>
-          </tr>
-          <tr
-            class="MuiTableRow-root"
-          >
-            <th
-              class="MuiTableCell-root MuiTableCell-body"
-              scope="row"
-            >
-              5
-            </th>
-            <td
-              class="MuiTableCell-root MuiTableCell-body"
-            >
-              Gingerbread
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body"
-            >
-              <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-outlined"
-                tabindex="0"
-                type="button"
-              >
-                <span
-                  class="MuiButton-label"
-                >
-                  Play
-                </span>
-                <span
-                  class="MuiTouchRipple-root"
-                />
-              </button>
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body"
-            >
-              <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-text"
-                tabindex="0"
-                type="button"
-              >
-                <span
-                  class="MuiButton-label"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root"
-                    focusable="false"
-                    role="presentation"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="MuiTouchRipple-root"
-                />
-              </button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div
-      class="makeStyles-buttonContainer-3"
-    >
-      <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-outlined"
-        tabindex="0"
-        type="button"
+            Delete
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="MuiTableBody-root"
       >
-        <span
-          class="MuiButton-label"
+        <tr
+          class="MuiTableRow-root"
         >
-          Create a new match
-        </span>
-        <span
-          class="MuiTouchRipple-root"
-        />
-      </button>
-      <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-outlined"
-        tabindex="0"
-        type="button"
-      >
-        <span
-          class="MuiButton-label"
+          <th
+            class="MuiTableCell-root MuiTableCell-body"
+            scope="row"
+          >
+            1
+          </th>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            Frozen yoghurt
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Play
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
         >
-          Play with a friend
-        </span>
-        <span
-          class="MuiTouchRipple-root"
-        />
-      </button>
-      <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-outlined"
-        tabindex="0"
-        type="button"
-      >
-        <span
-          class="MuiButton-label"
+          <th
+            class="MuiTableCell-root MuiTableCell-body"
+            scope="row"
+          >
+            2
+          </th>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            Ice cream sandwich
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Play
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
         >
-          Play against computer
-        </span>
-        <span
-          class="MuiTouchRipple-root"
-        />
-      </button>
-    </div>
+          <th
+            class="MuiTableCell-root MuiTableCell-body"
+            scope="row"
+          >
+            3
+          </th>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            Eclair
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Play
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+        >
+          <th
+            class="MuiTableCell-root MuiTableCell-body"
+            scope="row"
+          >
+            4
+          </th>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            Cupcake
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Play
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+        >
+          <th
+            class="MuiTableCell-root MuiTableCell-body"
+            scope="row"
+          >
+            5
+          </th>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            Gingerbread
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Play
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
-</DocumentFragment>
+  <div
+    class="makeStyles-buttonContainer-3"
+    data-testid="buttons"
+  >
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      tabindex="0"
+      type="button"
+    >
+      <span
+        class="MuiButton-label"
+      >
+        Create a new match
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      tabindex="0"
+      type="button"
+    >
+      <span
+        class="MuiButton-label"
+      >
+        Play with a friend
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      tabindex="0"
+      type="button"
+    >
+      <span
+        class="MuiButton-label"
+      >
+        Play against computer
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</div>
 `;
