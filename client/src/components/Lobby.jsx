@@ -45,7 +45,7 @@ export default function Lobby () {
   return (
     <div className={classes.wrapper}>
       <TableContainer component={Paper} className={classes.table}>
-        <Table aria-label="simple table">
+        <Table aria-label="simple table" data-testid="table">
           <TableHead>
             <TableRow>
               <TableCell>No.</TableCell>
