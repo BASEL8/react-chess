@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Button } from '@material-ui/core';
 import ClearIcon from '@material-ui/icons/Clear';
+import Chess from 'chess.js';
 
 const useStyles = makeStyles({
   wrapper: {
@@ -34,6 +35,9 @@ const rows = [
 
 export default function Lobby () {
   const classes = useStyles();
+  const chess = new Chess();
+  console.log(chess.pgn());
+  
 
   return (
     <div className={classes.wrapper}>
