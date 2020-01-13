@@ -11,16 +11,22 @@ exports.matchData = (req, res) => {
   });
 };
 exports.playGame = (req, res) => {
-  const { _id, playerTwo } = req.body;
-  Game.findOne({ _id }).exec((err, game) => {
+  const { id, playerTwo } = req.body;
+  Game.findOne({ _id: id }).exec((err, game) => {
     if (err) {
       return res.json({ err: errorHandler(err) });
     }
     if (!game) {
-      return res.json({ err: 'no game with this id ' });
+      return res.json({ err: 'no game with this id exists' });
     }
+    if (game.w) {
+      game.b = playerTwo
+    } else {
+      game.w = playerTwo
+    }
+    game.started = true;
     game.playerTwo = playerTwo;
-    return res.json(game);
+    game.save();
   });
 };
 exports.gameMove = (req, res) => {
@@ -34,6 +40,9 @@ exports.gameMove = (req, res) => {
     if (!game) {
       return res.json({ err: 'no game with this id ' });
     }
+    if (typeof gameStyle !== 'object') {
+      return res.json({ err: 'gameStyle must be an object' });
+    }
     game.history = gameHistory;
     game.fen = gameFen;
     game.squareStyles = gameStyle;
@@ -45,19 +54,20 @@ exports.gameMove = (req, res) => {
 
 exports.deleteGame = (req, res) => {
   const { id, userId } = req.body;
+
   Game.findById(id).exec((err, game) => {
     if (err) {
       return res.json({ err: errorHandler(err) });
     }
     if (!game) {
-      return res.json({ err: 'this game not available just now' });
+      return res.json({ err: 'this game is not available on database' });
     }
-    if (game) {
+    if (game) { 
       if (userId === game.playerOne && !game.playerTwo) {
         game.remove();
-        return res.json({ message: 'this game created by this player' });
+        return res.json({ message: 'this game has been successfully deleted' });
       }
-      return res.json({ message: `this game created by this ${game.playerOne}` });
+      return res.json({ message: `you cannot delete a game created by ${game.playerOne}` });
     }
   });
 };

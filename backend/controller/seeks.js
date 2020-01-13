@@ -13,8 +13,34 @@ exports.allMatches = (req, res) => {
     return res.json(games);
   });
 };
-exports.newMatches = (req, res) => {
+exports.newUser = (req, res) => {
   const { userId } = req.body;
+  Seek.findOne({ userId }).exec((err, seeker) => {
+    if (err) {
+      return res.status(400).json({
+        err: errorHandler(err),
+      });
+    }
+    if (seeker) {
+      return res.status(400).json({
+        err: 'there is already a user with this id',
+      });
+    }
+    if (!seeker) {
+      const newSeeker = new Seek({ userId });
+      newSeeker.save((newErr, resSeeker) => {
+        if (newErr) {
+          return res.status(400).json({
+            err: errorHandler(newErr),
+          });
+        }
+        return res.json(resSeeker);
+      });
+    }
+  });
+};
+exports.newMatches = (req, res) => {
+  const { userId, color } = req.body;
   Seek.findOne({ userId }).exec((err, seeker) => {
     if (err) {
       return res.status(400).json({
@@ -31,11 +57,11 @@ exports.newMatches = (req, res) => {
         }
       });
     }
-    const game = new Game({ playerOne: userId, startedBy: userId });
-    game.save((err, newGame) => {
+    const game = new Game({ playerOne: userId, startedBy: userId, [color]: userId });
+    game.save((newErr, newGame) => {
       if (err) {
         return res.status(400).json({
-          err: errorHandler(err),
+          err: errorHandler(newErr),
         });
       }
       return res.json(newGame);
@@ -44,14 +70,23 @@ exports.newMatches = (req, res) => {
 };
 exports.playWithFriend = (req, res) => {
   const { friendId, userId } = req.body;
-  const game = new Game({ playerOne: userId, friendId, withFriend: true });
-  game.save((err, newGame) => {
-    if (err) {
+  Seek.findOne({ userId: friendId }).exec((err, friend) => {
+    if (!friend) {
       return res.status(400).json({
-        err: errorHandler(err),
+        err: 'there is no user with this id',
       });
     }
-    return res.json(newGame);
+    if (friend) {
+      const game = new Game({ playerOne: userId, friendId, withFriend: true });
+      game.save((error, newGame) => {
+        if (err) {
+          return res.status(400).json({
+            err: errorHandler(error),
+          });
+        }
+        return res.json(newGame);
+      });
+    }
   });
 };
 exports.playWithFriendRequests = (req, res) => {
