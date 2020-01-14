@@ -1,5 +1,23 @@
-const { check } = require('express-validator');
+const { check, param } = require('express-validator');
 
+exports.newUserValidation = [
+  check('userId')
+    .not()
+    .isEmpty()
+    .withMessage('user id is required')
+    .isString()
+    .withMessage('is string')
+    .isLength({ min: 5 })
+    .withMessage('must be at least 5 letters long'),
+];
+exports.validateGetSeeksReq = [
+  param('userId')
+    .not()
+    .isEmpty()
+    .withMessage('user id is required')
+    .isString()
+    .withMessage('userId must be a string string'),
+];
 exports.newMatchesValidation = [
   check('userId')
     .not()
@@ -9,6 +27,10 @@ exports.newMatchesValidation = [
     .withMessage('is string')
     .isLength({ min: 5 })
     .withMessage('must be at least 5 letters long'),
+  check('color')
+    .not()
+    .isEmpty()
+    .withMessage('the color is required')
 ];
 exports.playWithFriendValidation = [
   check('friendId')
